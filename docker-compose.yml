@@ -14,7 +14,7 @@ services:
     volumes:
       - mailtrain-redis-data:/data
   mailtrain:
-    image: mailtrain:latest
+    image: gauravbidanidocker/mailtrain:latest
     depends_on:
       - mysql
       - redis
